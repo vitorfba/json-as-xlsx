@@ -31,7 +31,14 @@ function App() {
     let settings = {
       fileName: "MySpreadsheet",
     }
-    xlsx(data, settings)
+    xlsx(data, settings,(workbook) => {
+			data.forEach((sheet) => {
+				const sheetData = workbook.Sheets[sheet.sheet]
+				sheetData['!cols'] = [ 
+					{ wch: 50 }, // ITEM 
+				]
+			})
+		})
   }
 
   return (

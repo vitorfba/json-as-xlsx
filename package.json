@@ -1,6 +1,7 @@
 {
-  "name": "json-as-xlsx",
-  "private": true,
+  "name": "json-as-xlsx-styled",
+  "private": false,
+  "version": "1.0.0",
   "scripts": {
     "bootstrap": "lerna bootstrap",
     "start": "lerna run --parallel --stream start",

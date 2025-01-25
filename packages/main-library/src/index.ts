@@ -1,4 +1,4 @@
-import { utils, WorkBook, WorkSheet, write, writeFile, WritingOptions } from "@e965/xlsx"
+import { utils, WorkBook, WorkSheet, write, writeFile, WritingOptions } from "xlsx-js-style"
 
 export interface IColumn {
   label: string
